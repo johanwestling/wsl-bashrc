@@ -11,9 +11,9 @@ _Exit with **CTRL + X**, confirm or discard your changes with **Y** or **N** key
 ## Snippets
 
 ```bash
-# Change default working directory
+# Change default working directory to Windows user folder
 echo -e "\033[33m→\033[39m Changing default working directory"
-cd /mnt/c/Users/Whatever/folder/you/like
+cd /mnt/c/Users/$(cmd.exe /c "echo %USERNAME%" | tr -d '\r')
 ```
 
 ```bash
