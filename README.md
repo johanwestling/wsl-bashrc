@@ -2,6 +2,8 @@
 
 A collection of snippets for WSL 2 ```~/.bashrc```.
 
+The below snippets can be installed [manually](#manual) or by the [automated script](#automated).
+
 <br id="snippets">
 
 ## Snippets
@@ -12,7 +14,6 @@ Changes the default working directory of WSL to the Windows users home directory
 #### docker
 Autostarts the docker service when entering WSL. [View script source code](./snippets/docker.sh)
 
-The above snippets can be installed manually or by the automated script.
 
 <br id="manual">
 
