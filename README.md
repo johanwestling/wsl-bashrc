@@ -7,7 +7,7 @@ A collection of snippets for WSL 2 ```~/.bashrc```.
 ## Snippets
 
 #### directory
-Changes the default working directory of WSL. [View script source code](./snippets/directory.sh)
+Changes the default working directory of WSL to the Windows users home directory. [View script source code](./snippets/directory.sh)
 
 #### docker
 Autostarts the docker service when entering WSL. [View script source code](./snippets/docker.sh)
