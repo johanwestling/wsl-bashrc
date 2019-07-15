@@ -1,4 +1,4 @@
-# WSL 2 .bashrc snippets
+# wsl-setup-bashrc
 
 A collection of snippets for WSL 2 ```~/.bashrc```.
 
