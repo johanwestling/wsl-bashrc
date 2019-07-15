@@ -1,17 +1,22 @@
 #!/bin/bash
 
-bashrc_directory=""
 bashrc_docker=""
+bashrc_ip=""
+bashrc_directory=""
 bashrc_remove=""
 
 while [ $# -gt 0 ]; do
 	case "$1" in
-		--directory)
-      bashrc_directory="true"
-      ;;
-
 		--docker)
       bashrc_docker="true"
+      ;;
+
+		--ip)
+      bashrc_ip="true"
+      ;;
+
+		--directory)
+      bashrc_directory="true"
       ;;
 
 		--remove)
@@ -69,18 +74,26 @@ bashrc_snippet_remove(){
   fi
 }
 
-if [ -n "${bashrc_directory}" ]; then
-  if [ -z "${bashrc_remove}" ]; then
-    bashrc_snippet_add "directory"
-  else
-    bashrc_snippet_remove "directory"
-  fi
-fi
-
 if [ -n "${bashrc_docker}" ]; then
   if [ -z "${bashrc_remove}" ]; then
     bashrc_snippet_add "docker"
   else
     bashrc_snippet_remove "docker"
+  fi
+fi
+
+if [ -n "${bashrc_ip}" ]; then
+  if [ -z "${bashrc_remove}" ]; then
+    bashrc_snippet_add "ip"
+  else
+    bashrc_snippet_remove "ip"
+  fi
+fi
+
+if [ -n "${bashrc_directory}" ]; then
+  if [ -z "${bashrc_remove}" ]; then
+    bashrc_snippet_add "directory"
+  else
+    bashrc_snippet_remove "directory"
   fi
 fi

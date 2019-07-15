@@ -9,10 +9,13 @@ The below snippets can be installed [manually](#manual) or by the [automated scr
 ## Snippets
 
 #### directory
-Changes the default working directory of WSL to the Windows users home directory. [View script source code](./snippets/directory.sh)
+Changes to default working directory of current Windows user when opening a new session. [View script source code](./snippets/directory.sh)
+
+#### ip
+Outputs the current ip address of the WSL instance when opening a new session. [View script source code](./snippets/ip.sh)
 
 #### docker
-Autostarts the docker service when entering WSL. [View script source code](./snippets/docker.sh)
+Autostarts the docker service (if needed) when opening a new session. [View script source code](./snippets/docker.sh)
 
 
 <br id="manual">
@@ -38,5 +41,5 @@ Autostarts the docker service when entering WSL. [View script source code](./sni
     bash setup.sh --directory
     
     # Multiple scripts:
-    bash setup.sh --directory --docker
+    bash setup.sh --directory --ip --docker
     ```
